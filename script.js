@@ -7,3 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+document.getElementById("jump").addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});

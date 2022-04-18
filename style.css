@@ -91,3 +91,18 @@ code {
         margin-left: 0;
     }
 }
+
+#jump {
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(66, 66, 163);
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+
+    user-select: none;
+    cursor: pointer;
+}
