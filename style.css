@@ -68,6 +68,25 @@ code {
     margin: 10px 0 10px 0;
 }
 
+#jump {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(34, 80, 244);
+    border-radius: 10px;
+    color: white;
+    font-weight: 900;
+    user-select: none;
+    cursor: pointer;
+}
+
+#jump:hover {
+    background-color: rgb(27, 61, 184);
+}
+
 @media only screen and (max-width: 815px) {
     #navbar {
         background-color: white;
@@ -90,20 +109,4 @@ code {
         margin-top: 300px;
         margin-left: 0;
     }
-}
-
-#jump {
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(66, 66, 163);
-    border-radius: 10px;
-    color: white;
-    font-weight: 400;
-
-    user-select: none;
-    cursor: pointer;
 }
