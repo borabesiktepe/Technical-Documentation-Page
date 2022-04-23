@@ -2,27 +2,17 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: medium;
     font-weight: 300;
+    background-color: #0b0e14;
+    color: #ffffffd5;
 }
 
+/* NAVBAR */
 nav {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-
-    border-right: groove;
-}
-
-#main-doc {
-    position: absolute;
-    margin-left: 310px;
-    padding: 20px;
-    margin-bottom: 110px;
-}
-
-header {
-    font-size: x-large;
-    font-weight: 400;
+    background-color: #000000ab;
 }
 
 #nav-header {
@@ -30,11 +20,26 @@ header {
     font-weight: 600;
 }
 
+
+/* MAIN DOCUMENT */
+#main-doc {
+    position: absolute;
+    margin: auto auto 110px 310px;
+    padding: 20px;
+}
+
+header {
+    font-size: x-large;
+    font-weight: 600;
+    margin-top: 3rem;
+    filter: drop-shadow(0 0 0.75rem #000000);
+}
+
 a {
     position: relative;
     margin-right: 20px;
     text-decoration: none;
-    color: black;
+    color: #ffffffd5;
     font-weight: 400;
 }
 
@@ -43,10 +48,10 @@ a::before {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #18272F;
+    background-color: #2250f4;
     bottom: 0;
     left: 0;
-    transform-origin: right;
+    transform-origin: left;
     transform: scaleX(0);
     transition: transform .3s ease-in-out;
 }
@@ -63,11 +68,15 @@ li {
 
 code {
     display: block;
-    background-color: #f7f7f7;
     padding: 15px;
     margin: 10px 0 10px 0;
+    background-color: #425bb8;
+    color: #ffffffd5;
+    border-radius: 10px;
 }
 
+
+/* JUMP TO TOP BUTTON */
 #jump {
     position: fixed;
     bottom: 0px;
@@ -75,9 +84,9 @@ code {
     margin: 20px;
     padding: 10px;
     text-align: center;
-    background-color: rgb(34, 80, 244);
+    background-color: #2250f4;
     border-radius: 10px;
-    color: white;
+    color: #ffffffd5;
     font-weight: 900;
     user-select: none;
     cursor: pointer;
@@ -87,18 +96,20 @@ code {
     background-color: rgb(27, 61, 184);
 }
 
+
+/* MEDIA */
 @media only screen and (max-width: 815px) {
     #navbar {
-        background-color: white;
         position: absolute;
         top: 0;
         padding: 0;
         margin: 0;
         width: 100%;
-        max-height: 300px;
-        border: none;
-        z-index: 1;
-        border-bottom: 2px solid;
+        max-height: 350px;
+    }
+
+    #navbar #nav-header{
+        margin-top: 10px;
     }
 
     li {
@@ -106,7 +117,7 @@ code {
     }
 
     #main-doc {
-        margin-top: 300px;
+        margin-top: 340px;
         margin-left: 0;
     }
 }
